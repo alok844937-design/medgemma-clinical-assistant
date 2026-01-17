@@ -1,0 +1,24 @@
+DISCHARGE SUMMARY
+
+Patient: John Doe, 62-year-old male
+Admission Date: 01/10/2026
+Discharge Date: 01/15/2026
+
+HOSPITAL COURSE:
+Patient presented with acute chest pain and was diagnosed with STEMI.
+
+DISCHARGE DIAGNOSES:
+1. Acute ST-elevation myocardial infarction
+2. Hypertension
+3. Hyperlipidemia
+4. Type 2 Diabetes Mellitus
+
+MEDICATIONS ON DISCHARGE:
+1. Aspirin 81mg daily
+2. Clopidogrel 75mg daily
+3. Atorvastatin 80mg daily
+4. Metoprolol 50mg twice daily
+
+FOLLOW-UP:
+- Cardiology clinic in 1 week
+- Primary care in 2 weeks

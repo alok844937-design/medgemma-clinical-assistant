@@ -1,0 +1,45 @@
+# MedGemma Clinical Assistant
+
+## Overview
+AI-powered clinical documentation assistant for healthcare providers and patients.
+
+## Features
+- Patient Mode: Simplifies medical jargon
+- Doctor Mode: Structures clinical notes
+- Real-time Processing
+- Modern UI
+
+## Quick Start
+
+### Local Development
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+### Docker Deployment
+```bash
+docker build -t medgemma-assistant .
+docker run -p 5000:5000 medgemma-assistant
+```
+
+## Project Structure
+```
+medgemma_clinical_assistant/
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── README.md
+├── prompts/
+├── demo_data/
+├── evaluation/
+└── tests/
+```
+
+## Technology Stack
+- Backend: Flask
+- Frontend: HTML/CSS/JavaScript
+- Deployment: Docker
+
+## License
+MIT License

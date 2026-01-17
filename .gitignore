@@ -1,0 +1,48 @@
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Streamlit local config
+.streamlit/
+
+
+# Model weights & large data
+*.pt
+*.bin
+*.h5
+*.ckpt
+/models/
+
+
+# Logs
+*.log
+
+
+# Archives / zip / tar
+*.zip
+*.tar.gz
+*.rar
+
+
+# IDE / Editor folders
+.vscode/
+.idea/
