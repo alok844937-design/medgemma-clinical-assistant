@@ -41,6 +41,14 @@ medgemma_clinical_assistant/
 - Frontend: HTML/CSS/JavaScript
 - Deployment: Docker
 
+## 🎥Demo Video
+A 90-second walkthrough demonstrating:
+- Offline execution 
+- Passing automated tests 
+- Patient and doctor workflows 
+
+Demo script available in `demo/VIDEO_SCRIPT.md`.
+
 ## License
 MIT License
 
