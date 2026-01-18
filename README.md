@@ -66,6 +66,8 @@ medgemma_clinical_assistant/
 ├── README.md
 ├── prompts/
 ├── demo_data/
+|-- demo/
+|-- screenshots/
 ├── evaluation/
 └── tests/
 ```
@@ -74,6 +76,28 @@ medgemma_clinical_assistant/
 . Patient education & counselling 
 . Clinical note structuring 
 . Hackathons & healthcare demos
+
+## AI Model Note 
+This project currently uses a simulated MedGemma-style response pipeline to demonstarte offline clinical assistance workflows.
+
+## Planned Upgrade 
+- Replace rule-based processing with MedGemma/LLM inference
+- Support offline quantized medical models
+- Add clinical safety guardrails & citations
+
+## Architecture 
+User Input 
+⬇️
+Mode Selection (Patient / Doctor)
+⬇️
+AI Processing Layer
+⬇️
+Formatted Output
+
+## Why MedGemma Clinical Assistant?
+- Doctors spend 30-40% time on documentation
+- Patients struggle to understand medical jargon
+- This tool brings both with AI-assisted clarity
 
 ## ⚠️Disclaimer
 This application is for educational and demonstration purposes only. 
