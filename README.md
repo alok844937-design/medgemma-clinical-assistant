@@ -91,6 +91,6 @@ Demo script available in `demo/VIDEO_SCRIPT.md`.
 MIT License
 
 ## 👨‍💻Author
-Alok
-Computer Science & Data Analytics 
-IIT Patna
+Alok<br>
+Computer Science & Data Analytics<br>
+IIT Patna<br>
