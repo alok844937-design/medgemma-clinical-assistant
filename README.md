@@ -22,9 +22,9 @@ Built using *Flask + HTML/CSS + JavaScript**, this tool improves clarity, commun
   - Plan
 - Useful for OPD notes, discharge summaries, and documentation
 
-## Technology Stack
+## 🖥️Technology Stack
 - **Backend**: Flask
-- *Frontend**: HTML/CSS/JavaScript
+- **Frontend**: HTML/CSS/JavaScript
 - **Model Logic**: Simulated MedGemma clinical assistant
 - **Deployment**: Localhost / Cloud-ready
 
