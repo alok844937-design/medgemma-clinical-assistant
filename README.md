@@ -88,7 +88,7 @@ This project currently uses a simulated MedGemma-style response pipeline to demo
 ## Architecture 
 User Input <br>
 ⬇️<br>
-Mode Selection (Patient / Doctor)
+Mode Selection (Patient / Doctor)<br>
 ⬇️<br>
 AI Processing Layer<br>
 ⬇️<br>
