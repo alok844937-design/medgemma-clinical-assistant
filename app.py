@@ -189,10 +189,10 @@ HTML_TEMPLATE = """
         </div>
         
         <div class="tabs">
-            <button class="tab active" onclick="switchTab('patient')">
+            <button class="tab active" onclick="switchTab('patient', event)">
                 Patient Mode
             </button>
-            <button class="tab" onclick="switchTab('doctor')">
+            <button class="tab" onclick="switchTab('doctor', event)">
                 Doctor Mode
             </button>
         </div>
@@ -235,9 +235,9 @@ HTML_TEMPLATE = """
     </div>
     
     <script>
-        function switchTab(mode) {
+        function switchTab(mode, evt) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
+            evt.target.classList.add('active');
             
             document.getElementById('patient-mode').style.display = mode === 'patient' ? 'block' : 'none';
             document.getElementById('doctor-mode').style.display = mode === 'doctor' ? 'block' : 'none';
@@ -252,8 +252,11 @@ HTML_TEMPLATE = """
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({text, mode: 'patient'})
             });
-            
+
             const data = await response.json();
+
+            if (!response.ok) {alert(data.error); return;}
+
             document.getElementById('patient-result').textContent = data.result;
             document.getElementById('patient-output').style.display = 'block';
         });
@@ -269,6 +272,9 @@ HTML_TEMPLATE = """
             });
             
             const data = await response.json();
+
+            if (!response.ok) {alert(data.error); return;}
+
             document.getElementById('doctor-result').textContent = data.result;
             document.getElementById('doctor-output').style.display = 'block';
         });
@@ -284,14 +290,20 @@ def index():
 @app.route('/api/process', methods=['POST'])
 def process():
     data = request.json
-    text = data.get('text', '')
+    text = data.get('text', '').strip()
     mode = data.get('mode', 'patient')
+    
+    if not text:
+        return jsonify({
+            "error": "Please enter medical text before generating output."
+        }), 400
     
     if mode == 'patient':
         result = model.process_patient_explanation(text)
-    else:
+    elif mode == 'doctor':
         result = model.process_doctor_structure(text)
-    
+    else:
+        return jsonify({"error": "Invalid mode"}), 400 
     return jsonify({'result': result})
 
 @app.route('/health')
@@ -299,4 +311,4 @@ def health():
     return jsonify({'status': 'healthy'})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=5000, debug=True)

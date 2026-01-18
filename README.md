@@ -1,21 +1,55 @@
-# MedGemma Clinical Assistant
+# MedGemma Clinical Assistant🩺
 
 ## Overview
-AI-powered clinical documentation assistant for healthcare providers and patients.
+An AI-powered web application that helps convert raw medical text into: 
+- **Patient-friendly explanations** (Patient Mode)
+- **Structured clinical documentation** (Doctor Mode)
 
-## Features
-- Patient Mode: Simplifies medical jargon
-- Doctor Mode: Structures clinical notes
-- Real-time Processing
-- Modern UI
+Built using *Flask + HTML/CSS + JavaScript**, this tool improves clarity, communication, and documentation efficiency in healthcare workflows.
 
-## Quick Start
+## 🚀Features
 
-### Local Development
-```bash
+### 🙍Patient Mode: Simplifies medical jargon
+- Converts complex medical terminology into simple, understandable language
+- Highlights important conditions and medications
+- Helps patient better understand their diagnosis and treatment
+
+### 🧑‍⚕️Doctor Mode: Structures clinical notes
+- Structures unorganized clinical notes into a professional medical summary
+- Automatically generates:
+  - Chief Complaint & History 
+  - Assessment
+  - Plan
+- Useful for OPD notes, discharge summaries, and documentation
+
+## Technology Stack
+- **Backend**: Flask
+- *Frontend**: HTML/CSS/JavaScript
+- **Model Logic**: Simulated MedGemma clinical assistant
+- **Deployment**: Localhost / Cloud-ready
+
+
+## 📸Application Screenshots
+
+### Patient Mode (Input + Output)
+![Patient Mode Screenshot](screenshots/patient_mode.png)
+
+### Doctor Mode (Input + Structured Output)
+![Doctor Mode Screenshot](screenshots/doctor_mode.png)
+
+Screenshots show both input and generated output together for better clarity.
+
+
+## How to run Locally
+```bash 
+git clone https://github.com/alok844937-design/medgemma-clinical-assistant.git
+cd medgemma-clinical-assistant
+pip install flask 
 pip install -r requirements.txt
 python app.py
 ```
+Open browser and go to:
+http://127.0.0.1:5000
 
 ### Docker Deployment
 ```bash
@@ -35,11 +69,15 @@ medgemma_clinical_assistant/
 ├── evaluation/
 └── tests/
 ```
+## 💡Use Cases
+. Medical OPD documentation
+. Patient education & counselling 
+. Clinical note structuring 
+. Hackathons & healthcare demos
 
-## Technology Stack
-- Backend: Flask
-- Frontend: HTML/CSS/JavaScript
-- Deployment: Docker
+## ⚠️Disclaimer
+This application is for educational and demonstration purposes only. 
+It does not replace professional medical advice.
 
 ## 🎥Demo Video
 A 90-second walkthrough demonstrating:
@@ -49,8 +87,10 @@ A 90-second walkthrough demonstrating:
 
 Demo script available in `demo/VIDEO_SCRIPT.md`.
 
-## License
+## 📜License
 MIT License
 
-# medgemma-clinical-assistant
-Privacy-first offline clinical assistant using MedGemma (HAI-DEF) for structured notes and patient-friendly explanations.
+## 👨‍💻Author
+Alok
+Computer Science & Data Analytics 
+IIT Patna
