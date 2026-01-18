@@ -86,12 +86,12 @@ This project currently uses a simulated MedGemma-style response pipeline to demo
 - Add clinical safety guardrails & citations
 
 ## Architecture 
-User Input 
-⬇️
+User Input <br>
+⬇️<br>
 Mode Selection (Patient / Doctor)
-⬇️
-AI Processing Layer
-⬇️
+⬇️<br>
+AI Processing Layer<br>
+⬇️<br>
 Formatted Output
 
 ## Why MedGemma Clinical Assistant?
